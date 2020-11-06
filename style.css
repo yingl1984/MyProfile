@@ -1,0 +1,203 @@
+
+/* General */
+body {
+	background:#faf9f9;
+  margin: 0;
+  font-family: monospace,Arial, Helvetica, sans-serif;
+  font-size:18px;
+  /* color:#355070; */
+}
+img {
+  width: 100%;
+}
+img.rounded {
+  border-radius: 8px;
+}
+/* links pseudo */
+main a:link    { color: #457b9d }
+main a:visited { color: hsl(120, 100%, 5%); }
+main a:hover   { color: hsl(120, 55%, 43%); }
+main a:active  { color: white; }
+
+
+
+/* Header*/
+header {
+  background-color: #006d77;
+  background-image: url(images/backgrounds/subtle_brown_mini_waves.jpg);
+  margin-bottom: 40px;
+  /* justify-content: center; */
+}
+
+.logo {
+  font-family: cursive,Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #d8d0c6;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+/* Navigation*/
+header nav {
+
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  /* justify-content: center; */
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-bottom: 0; */
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color:#faf9f9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+	text-decoration: underline;	
+
+}
+/* Main*/
+#hidden-title{
+  visibility: hidden;
+}
+#service-center{
+  max-width:400px;
+  margin:auto;
+} 
+
+h2 {
+  font-size: 28px;
+  font-family: cursive, sans-serif;
+  font-weight: 500;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+p {
+ font-family: 'Montserrat', sans-serif;
+}
+#my-project-space{
+  margin-bottom:20px;
+}
+#greeting{
+  font-size: 23px;
+}
+
+/* Contact Form */
+
+form {
+  padding-right: 10px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input[type=text], 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 300px;
+}
+
+form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+    background: #006d77;
+    color: #fff;
+    margin: 0 8px 10px 0;
+}
+/*Mobile style */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+.item-double{
+  flex:2;
+  margin: 10px;
+}
+
+
+
+/* Desktop style*/
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    padding-left:10px;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+    margin-right:10px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  #about, #services{
+    background-color: #bee3dbb7;
+    padding: 20px 0 30px 0;
+    margin: 120px 0;
+  }
+
+  header nav {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  /* padding-bottom: 0; */
+}
+}
+
+
